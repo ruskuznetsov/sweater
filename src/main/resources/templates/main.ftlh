@@ -9,13 +9,12 @@
             <input type="text" name="text" placeholder="Enter text"/>
             <input type="text" name="tag" placeholder="Tag"/>
             <input type="hidden" name="_csrf" value="${_csrf.token}"/>
-            <button type=" submit">Add</button>
+            <button type="submit">Add</button>
         </form>
     </div>
     <div>
-        <form method="post" action="filter">
-            <input type="text" name="tag"/>
-            <input type="hidden" name="_csrf" value="${_csrf.token}"/>
+        <form method="get" action="/main">
+            <input type="text" name="filter" placeholder="${tag}"/>
             <button type="submit">Filter</button>
         </form>
     </div>
