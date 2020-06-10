@@ -14,7 +14,7 @@
     </div>
     <div>
         <form method="get" action="/main">
-            <input type="text" name="filter" placeholder="${tag}"/>
+            <input type="text" name="filter" placeholder="${tag!}"/>
             <button type="submit">Filter</button>
         </form>
     </div>
